@@ -1,0 +1,205 @@
+{
+  "design": {
+    "name": "Sera",
+    "meaning": "se (say) + ra (manner) = way of speaking",
+    "phonology": {
+      "vowels": "aeiou",
+      "consonants": "ptkmnsrlwj",
+      "alphabet_size": 15,
+      "syllable": "CV",
+      "n_syllables_possible": 50,
+      "root_shape": "CV or CVCV",
+      "particle_shape": "CV",
+      "stress": "first syllable"
+    },
+    "grammar": {
+      "word_order": "SVO (strict)",
+      "tense": "particle before verb (pa=past, fa=future, none=present)",
+      "plural": "suffix ku",
+      "negation": "particle no",
+      "question": "particle ti (sentence-final)",
+      "case": "none (no inflection)",
+      "gender": "none (epicene)",
+      "articles": "se = definite, ta = all/each",
+      "derivation": "compounding (e.g. liku = li+ku = brotherhood)"
+    },
+    "vocabulary_size_core": 42,
+    "design_principles": [
+      "最小字母表 → 字符熵低",
+      "严格 CV → digram 熵低",
+      "小词根集 + 复合 → 词熵低",
+      "严格 SVO → 跨词熵低",
+      "无变格变位 → 形态熵低",
+      "高频语法词固定为 CV → 最高频符号最短"
+    ]
+  },
+  "vocabulary": {
+    "mi": "I",
+    "mu": "you(sg)",
+    "ma": "he/she/it",
+    "miku": "we",
+    "muku": "you(pl)",
+    "maku": "they",
+    "ku": "PLURAL",
+    "pa": "PAST",
+    "fa": "FUTURE",
+    "ti": "QUESTION",
+    "se": "the",
+    "ta": "all/each",
+    "ke": "and",
+    "lo": "of",
+    "wo": "should/must",
+    "no": "not",
+    "to": "at/in",
+    "ja": "or",
+    "je": "if",
+    "pe": "person",
+    "ra": "right",
+    "re": "dignity",
+    "si": "reason/mind",
+    "su": "conscience",
+    "li": "brother",
+    "ki": "freedom",
+    "la": "language",
+    "wa": "day/time",
+    "na": "name",
+    "po": "food",
+    "pi": "spirit",
+    "ka": "act",
+    "so": "sun",
+    "ka_": "thing",
+    "te": "see",
+    "sa": "speak",
+    "mo": "eat",
+    "pu": "be_born",
+    "tu": "be(copula)",
+    "ne": "give",
+    "me": "get",
+    "ko": "do",
+    "le": "equal",
+    "ri": "free",
+    "ro": "mutual",
+    "lu": "good",
+    "ni": "blue",
+    "ru": "bright",
+    "we": "big",
+    "wi": "small",
+    "ju": "new"
+  },
+  "samples": {
+    "A_UDHR1": {
+      "English": "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.",
+      "Esperanto": "Ĉiuj homoj estas denaske liberaj kaj egalaj laŭ digno kaj rajtoj. Ili havas racion kaj konsciencon, kaj devus konduti unu al la alia en spirito de frateco.",
+      "Lojban": "ro da poi remna zo'u da se ditcu lo ka ce'u xabju ka'i lo ka vipsi no'i lo ka selfu ti'u ro nu prami ri fo lo ka prenu prami prenu",
+      "Sera": "ta pe ku pa pu ri ke le to re ke ra. maku pa me si ke su, wo ka ro to pi lo liku."
+    },
+    "B_daily": {
+      "English": "I see you. You see me. The person speaks. The people speak. We eat food. They have rights. The day is good. We are free.",
+      "Esperanto": "Mi vidas vin. Vi vidas min. La homo parolas. La homoj parolas. Ni manĝas manĝaĵon. Ili havas rajtojn. La tago estas bona. Ni estas liberaj.",
+      "Lojban": "mi viska do .i do viska mi .i le prenu cu tavla .i loi prenu cu tavla .i mi'a citka lo cidja .i ri se ponse lo se licnu .i le djedi cu xamgu .i mi'a selsre lo ka ce'u xabju",
+      "Sera": "mi te mu. mu te mi. se pe sa. se pe ku sa. miku mo po. maku be ra. se wa lu. miku be ri."
+    },
+    "C_descriptive": {
+      "English": "The sun is bright. The sky is blue. Birds sing in trees. Water flows in rivers. People live in houses. The world is good.",
+      "Esperanto": "La suno brilas. La ĉielo estas blua. Birdoj kantas en arboj. Akvo fluas en riveroj. Homoj loĝas en domoj. La mondo estas bona.",
+      "Lojban": "le solri cu farlu .i le tsani cu blanu .i cipni cu sanga ne'i tricu .i djacu cu farlu ne'i rirx .i prenu cu xabju ne'i zdani .i le terdi cu xamgu",
+      "Sera": "se so ru. se ka ni. pi sa to ka. wa ro to wa. pe ku be to pe. se ta lu."
+    }
+  },
+  "entropy_results": [
+    {
+      "language": "English",
+      "chars": 413,
+      "words": 79,
+      "alphabet": 23,
+      "H_char": 4.080131216039772,
+      "H_digram": 2.6525094292476554,
+      "H_trigram": 1.0770073484391263,
+      "H_word": 5.545878178798278,
+      "gzip_ratio": 0.5883777239709443,
+      "bits_per_char_compressed": 4.707021791767555
+    },
+    {
+      "language": "Esperanto",
+      "chars": 422,
+      "words": 75,
+      "alphabet": 25,
+      "H_char": 4.117764284729061,
+      "H_digram": 2.502127995448294,
+      "H_trigram": 1.0497336302976312,
+      "H_word": 5.375271858082506,
+      "gzip_ratio": 0.5804195804195804,
+      "bits_per_char_compressed": 4.720379146919432
+    },
+    {
+      "language": "Lojban",
+      "chars": 449,
+      "words": 104,
+      "alphabet": 22,
+      "H_char": 4.030250186326951,
+      "H_digram": 2.1107925902958047,
+      "H_trigram": 1.1540788617827737,
+      "H_word": 5.120690262315721,
+      "gzip_ratio": 0.48552338530066813,
+      "bits_per_char_compressed": 3.884187082405345
+    },
+    {
+      "language": "Sera",
+      "chars": 242,
+      "words": 72,
+      "alphabet": 15,
+      "H_char": 3.5701340356017606,
+      "H_digram": 1.7531505725631034,
+      "H_trigram": 1.3139746013256535,
+      "H_word": 5.15070169609156,
+      "gzip_ratio": 0.5537190082644629,
+      "bits_per_char_compressed": 4.429752066115703
+    }
+  ],
+  "token_savings": [
+    {
+      "lang": "English",
+      "chars": 170,
+      "chars_vs_en": 1.0,
+      "words": 30,
+      "words_vs_en": 1.0,
+      "bytes": 170,
+      "bytes_vs_en": 1.0,
+      "comp_bytes": 123,
+      "comp_vs_en": 1.0
+    },
+    {
+      "lang": "Esperanto",
+      "chars": 155,
+      "chars_vs_en": 0.9117647058823529,
+      "words": 27,
+      "words_vs_en": 0.9,
+      "bytes": 157,
+      "bytes_vs_en": 0.9235294117647059,
+      "comp_bytes": 123,
+      "comp_vs_en": 1.0
+    },
+    {
+      "lang": "Lojban",
+      "chars": 130,
+      "chars_vs_en": 0.7647058823529411,
+      "words": 31,
+      "words_vs_en": 1.0333333333333334,
+      "bytes": 130,
+      "bytes_vs_en": 0.7647058823529411,
+      "comp_bytes": 91,
+      "comp_vs_en": 0.7398373983739838
+    },
+    {
+      "lang": "Sera",
+      "chars": 81,
+      "chars_vs_en": 0.4764705882352941,
+      "words": 25,
+      "words_vs_en": 0.8333333333333334,
+      "bytes": 81,
+      "bytes_vs_en": 0.4764705882352941,
+      "comp_bytes": 68,
+      "comp_vs_en": 0.5528455284552846
+    }
+  ]
+}
